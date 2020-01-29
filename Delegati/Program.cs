@@ -9,39 +9,39 @@ namespace Delegati
     {
         private static void Main(string[] args)
         {
-            #region old
+            //#region old
 
-            MyDelegate myDelegate = new MyDelegate(Add);
+            //MyDelegate myDelegate = new MyDelegate(Add);
 
-            Console.WriteLine(MyFunction(myDelegate, 2, 3));
+            //Console.WriteLine(MyFunction(myDelegate, 2, 3));
 
-            myDelegate = Subtract;
+            //myDelegate = Subtract;
 
-            Console.WriteLine(MyFunction(myDelegate, 3, 2));
+            //Console.WriteLine(MyFunction(myDelegate, 3, 2));
 
-            GenericClass<string> genericInstance = new GenericClass<string>();
+            //GenericClass<string> genericInstance = new GenericClass<string>();
 
-            genericInstance.SetGenericAttribute("Zdravo ja sam genericki atribut");
-            Console.WriteLine(genericInstance.Print());
+            //genericInstance.SetGenericAttribute("Zdravo ja sam genericki atribut");
+            //Console.WriteLine(genericInstance.Print());
 
-            GenericClass<int> genericInstance2 = new GenericClass<int>();
-            genericInstance2.SetGenericAttribute(33);
+            //GenericClass<int> genericInstance2 = new GenericClass<int>();
+            //genericInstance2.SetGenericAttribute(33);
 
-            Console.WriteLine(genericInstance2.Print());
+            //Console.WriteLine(genericInstance2.Print());
 
-            Auto a = new Auto("BMW", "NE znam", 1999);
-            Radnik r = new Radnik("Pera", "Peric", "Racunovodja");
+            //Auto a = new Auto("BMW", "NE znam", 1999);
+            //Radnik r = new Radnik("Pera", "Peric", "Racunovodja");
 
-            GenericClass<Auto> generiAuto = new GenericClass<Auto>();
-            GenericClass<Radnik> genericRadnik = new GenericClass<Radnik>();
+            //GenericClass<Auto> generiAuto = new GenericClass<Auto>();
+            //GenericClass<Radnik> genericRadnik = new GenericClass<Radnik>();
 
-            generiAuto.SetGenericAttribute(a);
-            genericRadnik.SetGenericAttribute(r);
+            //generiAuto.SetGenericAttribute(a);
+            //genericRadnik.SetGenericAttribute(r);
 
-            Console.WriteLine(generiAuto.Print());
-            Console.WriteLine(genericRadnik.Print());
+            //Console.WriteLine(generiAuto.Print());
+            //Console.WriteLine(genericRadnik.Print());
 
-            #endregion old
+            //#endregion old
 
             Radnik r = new Radnik("Pera", "Peric", "Racunovodja");
 
